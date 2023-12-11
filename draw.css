@@ -1,0 +1,558 @@
+/* 네브바 배경색 */
+.navbar-light{
+    background-color: #8fd176;
+ }
+ /* 로고 사진 */
+ .custom-image{
+    margin-right: 10px;
+ }
+ 
+ 
+ /* "날짜:" 레이블의 글자 크기를 키웁니다. */
+  label[for="diaryDate"] {
+    font-family: 'Dongle', sans-serif; /* Dongle 폰트를 지정하세요 */
+    font-size: 30px; /* 원하는 크기로 조정하세요 */
+    font-weight: bold;
+}
+input[type="date"] {
+    padding: 5px;
+    padding-left: 20px; /* 날짜 입력 왼쪽 여백 주기 */
+    border: 4px solid #35A20D;
+    font-family: 'Dongle', sans-serif;
+    font-size: 30px;
+    border-radius: 35px;
+    background-color: #fffce6; /* 배경 색상 설정 */
+    height: 40px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+transform: scale(0.8); /* 달력 아이콘 크기 키우기 */
+}
+input#diaryDate {
+margin-left: 75%; /* 왼쪽으로 이동시키기 위한 여유값 조절 */
+margin-top: 13px; /* 아래로 내리기 위한 여유값 조절 */
+width: 170px; /* 너비 조절 */
+}
+/* "그림 그리기" 버튼 스타일링 */
+button#button11 {
+    font-size: 27px;
+    font-family: 'Dongle', sans-serif;
+    background-color: #35A20D;
+
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 130px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+/* "그림 그리기" 버튼에 호버(마우스 오버) 효과 추가 */
+button#button11:hover {
+    background-color: #52de2b;
+}
+
+/* "영양 정보" 버튼 스타일링 */
+button#button22 {
+    font-size: 27px;
+    font-family: 'Dongle', sans-serif;
+    background-color: #35A20D;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 130px;
+    transition: background-color 0.3s ease;
+}
+
+/* "영양 정보" 버튼에 호버(마우스 오버) 효과 추가 */
+button#button22:hover {
+    background-color: #52de2b;
+}
+
+/* 버튼 1과 버튼 2 사이에 간격을 설정 */
+.navbar-button button {
+    margin-right: 10px;
+}
+
+/* "그림 그리기" 버튼 스타일링 */
+button#button1, button#button2, button#button3, button#button4, button#button5, button#button6, button#button7 {
+    font-size: 27px;
+    font-family: 'Dongle', sans-serif;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 130px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+/* "그림 그리기" 버튼에 호버(마우스 오버) 효과 추가 */
+button#button1:hover, button#button2:hover, button#button3:hover, button#button4:hover, button#button5:hover, button#button6:hover, button#button7:hover,button#button8:hover {
+    background-color: #52de2b;
+}
+
+/* 각 버튼의 배경색 설정 */
+button#button1 {
+    background-color: #FF0000; /* 빨간색 */
+}
+button#button2 {
+    background-color: #FFA500; /* 주황색 */
+}
+button#button3 {
+    background-color: #FFFF00; /* 노란색 */
+}
+button#button4 {
+    background-color: #008000; /* 초록색 */
+}
+button#button5 {
+    background-color: #0000FF; /* 파란색 */
+}
+button#button6 {
+    background-color: #000080; /* 남색 */
+}
+button#button7 {
+    background-color: #800080; /* 보라색 */
+}
+button#button8{
+    background-color: #513906;
+}
+
+#myCanvas {
+    background-color: #ffffff;
+    width: 80%; /* 전체 너비에서 20%만큼 오른쪽으로 옮겨짐 */
+    height: 100%;
+    margin-left: 20%; /* 캔버스를 오른쪽으로 이동시킴 */
+}
+
+/* 돌아가기 버튼 스타일링 */
+#goBackButton {
+font-size: 25px;
+font-family: 'Dongle', sans-serif;
+background-color: #35A20D;
+color: #ffffff;
+border: none;
+border-radius: 15px;
+padding: 10px 20px;
+cursor: pointer;
+width: 100px;
+height: 40px;
+transition: background-color 0.3s ease;
+margin-top: 165px; /* 조절한 부분: 원하는 만큼 수정 가능 */
+margin-left: -92px;
+}
+
+/* 컬러 버튼 그룹 스타일링 */
+#colorButtonGroup {
+    display: flex;
+    gap: 20px;
+}
+
+/* 컬러 버튼 스타일링 */
+#colorButtonGroup button {
+    width: 40px;
+    height: 40px;
+
+}
+
+/* 저장하기 버튼 스타일링 */
+.saveButton {
+    background-color: #4cc122;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-family: 'Dongle', sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100px;
+}
+
+/* 저장하기 버튼에 호버(마우스 오버) 효과 추가 */
+.saveButton:hover {
+    background-color: #4ee424;
+}
+
+/* 삭제하기 버튼 스타일링 */
+.deleteButton {
+    background-color: #f91a1a;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-family: 'Dongle', sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100px;
+}
+
+/* "오늘 먹은 음식을 그려보세요!!" 텍스트 스타일링 */
+#foodText {
+font-family: 'Dongle', sans-serif;
+font-size: 30px;
+position: absolute;
+top: 100px; /* 기존에 100px였던 것을 80px로 수정 */
+left: 300px;
+margin: 0;
+color: #000;
+}
+/* 삭제하기 버튼에 호버(마우스 오버) 효과 추가 */
+.deleteButton:hover {
+    background-color: #ec7373;
+}
+/* #sidebar {
+background-color: #D9D9D9; */
+/* width: 60px; 원하는 너비로 조절 */
+/* height: 508px; 캔버스와 같은 높이로 조절 */
+/* position: absolute; */
+/* top: 152px; */
+/* left: 828px; 캔버스의 오른쪽에 위치하도록 조절 */
+/* border: 4px solid #000; */
+/* border-left: none; 왼쪽 선 없애기(이거 진짜 짱이다) */
+/* display: flex;
+flex-direction: column;
+align-items: center;
+} */
+
+
+.box-container {
+margin-top: 50px; /* 이 값을 조정해서 전체를 아래로 내릴 수 있어 */
+}
+
+.white-box1 {
+width: 50px;
+height: 50px;
+background-color: #fff;
+margin-bottom: 44px;
+background-image: url(image/icon1.png);
+background-size: 80%;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.white-box2 {
+width: 50px;
+height: 50px;
+background-color: #fff;
+margin-bottom: 44px;
+background-image: url(image/icon2.png);
+background-size: 80%;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.white-box3 {
+width: 50px;
+height: 50px;
+background-color: #fff;
+margin-bottom: 44px;
+background-image: url(image/icon3.png);
+background-size: 80%;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.white-box4 {
+width: 50px;
+height: 50px;
+background-color: #fff;
+margin-bottom: 44px;
+background-image: url(image/icon4.png);
+background-size: 80%;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.white-box5 {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    margin-bottom: 44px;
+    background-image: url(image/icon5.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+
+.button-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+}
+.canvas-container {
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+}
+
+.canvas {
+    background-color: aqua;
+    width: 2000px;
+    height: 620px;
+    display: flex;
+}
+.drawing {
+    background-color:blue;
+    width: 90%;
+    height: 100%;
+}
+.dogu {
+    background-color: #D9D9D9;
+    width: 10%;
+    height: 100%;
+}
+
+.drawzone {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 80%;
+}
+.buttonzone {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 10%;
+}
+.colorzone {
+    background-color: #ffeed1;
+    width: 100%;
+    height: 10%;
+}
+/* 7개의 색상 선택 버튼 스타일링 */
+#colorButton1,
+#colorButton2,
+#colorButton3,
+#colorButton4,
+#colorButton5,
+#colorButton6,
+#colorButton7,
+#colorButton8,
+#colorButton9,
+#colorButton10,
+#colorButton11, 
+ #colorButton12{
+width: 40px; /* 크기를 40px로 수정 */
+height: 40px;
+border: none;
+margin: 11px; /* 간격을 5px로 수정 */
+cursor: pointer;
+border-radius: 50%;
+}
+.deleteButton {
+    font-family: 'Dongle', sans-serif;
+    height: 50px;
+    margin-left: 14px;
+}
+
+.saveButton{
+    font-family: 'Dongle', sans-serif;  height: 50px;
+    margin-left: 570px;
+}
+.dogu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.white-box1,
+.white-box2,
+.white-box3,
+.white-box4,
+.white-box5 {
+  margin-bottom: 50px; /* 각 박스를 아래쪽으로 내리는 마진값 */
+}
+.white-box1 {
+    margin-top: 20px; /* 위쪽 여백 조절을 위한 마진값 */
+  }
+    
+  .canvas {
+    width:900px;
+    height: 550px;
+    border: 4px solid #000;
+    margin-top: 50px; /* 상단 여백 조절 */
+    margin-left: 20px; /* 왼쪽 여백 조절 */
+  }
+  
+.drawbox {
+    background-color: #ec7373;
+    width: 900px;
+    height: 550px;
+    margin-left: 20px;
+}
+
+.saveButton{
+    font-family: 'Dongle', sans-serif;  height: 50px;
+    margin-left: 570px;
+}
+
+      /* 모버알 사이즈 스타일 */
+@media (min-width: 428px) {
+    .canvas {
+        width: 420px;
+        height: 400px;
+        margin-top: 90px;
+        margin-left: 20px;
+        
+    }
+    .white-box1, .white-box2, .white-box3, .white-box4, .white-box5 {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 60px; /* 박스끼리 서로 여백 */
+    }
+
+    #colorButton1,
+    #colorButton2,
+    #colorButton3,
+    #colorButton4,
+    #colorButton5,
+    #colorButton6,
+    #colorButton7,
+    #colorButton8,
+    #colorButton9,
+    #colorButton10,
+    #colorButton11, 
+     #colorButton12{
+    width: 18px; /* 크기를 40px로 수정 */
+    height: 18px;
+    border: none;
+    margin: 4.2px; /* 간격을 5px로 수정 */
+    cursor: pointer;
+    border-radius: 50%;
+    }
+    .deleteButton {
+        font-family: 'Dongle', sans-serif;
+        font-size: 15px;
+        width: 75px;
+        height: 28px;
+        margin-left: 14px;
+        line-height: 20px; /* 버튼의 높이와 일치하게 조절해야 합니다. */
+    }
+    
+    .saveButton {
+        font-family: 'Dongle', sans-serif;
+        font-size: 15px;
+        width: 75px;
+        height: 28px;
+        margin-left: 285px; /* 좌우 여백은 유지한 채 위로 이동 */
+        transform: translateY(-30px); /* 위로 이동시키기 */
+    }
+}
+
+
+    /* 테블릿 사이즈 스타일 */
+    @media (min-width: 501px) and (max-width: 836px) {
+    .canvas {
+        width: 650px;
+        height: 500px;
+        margin-top: 50px;
+        margin-left: 20px;
+        
+    }
+    .white-box1, .white-box2, .white-box3, .white-box4, .white-box5 {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 70px; /* 박스끼리 서로 여백 */
+    }
+    .deleteButton {
+        font-family: 'Dongle', sans-serif;
+        font-size: 20px;
+        width: 100px;
+        height: 40px;
+        margin-left: 14px;
+
+    }
+    .saveButton {
+        font-family: 'Dongle', sans-serif;
+        font-size: 20px;
+        width: 100px;
+        height: 40px;
+        margin-left: 460px; /* 좌우 여백은 유지한 채 위로 이동 */
+        transform: translateY(-42px); /* 위로 이동시키기 */
+    }
+    #colorButton1,
+    #colorButton2,
+    #colorButton3,
+    #colorButton4,
+    #colorButton5,
+    #colorButton6,
+    #colorButton7,
+    #colorButton8,
+    #colorButton9,
+    #colorButton10,
+    #colorButton11, 
+     #colorButton12{
+    width: 22px; /* 크기를 40px로 수정 */
+    height: 22px;
+    border: none;
+    margin: 11px; /* 간격을 5px로 수정 */
+    cursor: pointer;
+    border-radius: 50%;
+    }
+    
+      
+}
+
+ /* 데스크탑 사이즈 스타일 */
+ @media (min-width: 835px) and (max-width: 6000px) {
+    .canvas {
+        width: 900px;
+        height: 550px;
+        margin-top: 50px;
+        margin-left: 20px;
+        
+    }
+    .white-box1,.white-box2,.white-box3,.white-box4,.white-box5{
+        width: 50px;
+        margin-bottom: 50px;
+    }
+    #colorButton1,
+#colorButton2,
+#colorButton3,
+#colorButton4,
+#colorButton5,
+#colorButton6,
+#colorButton7,
+#colorButton8,
+#colorButton9,
+#colorButton10,
+#colorButton11, 
+ #colorButton12{
+width: 40px; /* 크기를 40px로 수정 */
+height: 40px;
+border: none;
+margin: 11px; /* 간격을 5px로 수정 */
+cursor: pointer;
+border-radius: 50%;
+}
+.white-box1, .white-box2, .white-box3, .white-box4, .white-box5 {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 55px; /* 박스끼리 서로 여백 */
+}
+.deleteButton {
+    font-family: 'Dongle', sans-serif;
+    font-size: 20px;
+    width: 120px;
+    height: 40px;
+    margin-left: 14px;
+    transform: translateY(-0px); /* 위로 이동시키기 */
+
+}
+.saveButton {
+    font-family: 'Dongle', sans-serif;
+    font-size: 20px;
+    width: 120px;
+    height: 40px;
+    margin-left: 528px; /* 좌우 여백은 유지한 채 위로 이동 */
+    transform: translateY(-0px); /* 위로 이동시키기 */
+}
+
+    }
+  
+    
