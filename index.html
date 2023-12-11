@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+
+    <!-- 파비콘 설정(브로콜리) -->
+    <link rel="icon" href="image/favicon.png" type="image/png">
+
+    <!-- 부트스트랩 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- 부트스트랩 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    /* 전체 페이지 배경색 설정 */
+body {
+    background-color: #FDF9D7;
+}
+</style>
+
+    <title>삼시쉽끼</title>
+</head>
+<body>
+<nav class="navbar navbar-light">
+    <a class="navbar-brand navbar-button" href="index.html"> <!--nav바 안의 삽시쉽끼를 눌렀을때 index.html 화면으로 이동-->
+        <img src="/image/logodemo1.png" class="custom-image">
+        <span class="logotitle">삼시쉽끼</span>
+    </a>
+    <button type="button"  id="button1" style="margin-left: auto;">그림 그리기</button>
+    <button type="button"  id="button2">영양 정보</button>
+</nav>
+
+<div class="container mt-4">    <!--전체 요소 클래스-->
+    <div class="diary-box"> <!--입력을 도와주는 클래스-->
+        <div class="form-group"> <!--그룹화-->
+            <label for="diaryDate">날짜:</label>
+            <input type="date" class="form-control" id="diaryDate"> <!--날짜 입력칸-->
+        </div>
+        <div class="form-group">
+            <label for="diaryEntry">먹은 음식:</label>
+            <div style="position: relative;"> <!--요소 위치 조정-->
+                <textarea class="form-control" id="diaryEntry" rows="20" 
+                placeholder="많이 먹은 순서대로 빠짐없이 적어보세요!"></textarea> <!-- textarea = 입력할 수 있게 해줌
+                                                                                    placeholder = 사용자가 입력해야 하는 내용-->
+                <button type="button" class="btn btn-danger" id="deleteButton"
+                        style="position: absolute; bottom: 0; left: 0; border-radius: 15px;">삭제하기
+                </button>
+                <button type="button" class="btn btn-primary" id="saveButton"
+                        style="position: absolute; bottom: 0; right: 0; border-radius: 15px;">저장하기
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
