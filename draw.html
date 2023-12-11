@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>삼시쉽끼</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/draw.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+
+    <!-- 파비콘 설정(브로콜리) -->
+    <link rel="icon" href="image/favicon.png" type="image/png">
+
+    <!-- 부트스트랩 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <!-- 부트스트랩 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand navbar-button" href="index.html"> <!--nav바 안의 삽시쉽끼를 눌렀을때 index.html 화면으로 이동-->
+            <img src="/image/logodemo1.png" class="custom-image">
+            <span style="font-family: 'Dongle', sans-serif; font-size: 40px; font-weight: bold; margin-left: -7.5px;">삼시쉽끼</span>
+        </a>
+
+        <button type="button"  id="button11" style="margin-left: auto;">그림 그리기</button>
+        <button type="button" id="button22" onclick="window.location.href = 'nutrition.html';">영양 정보</button> <!--영양 정보 버튼을 눌렀을때 nutrition.html로 이동-->
+
+    </nav>
+        <style>/* 전체 페이지 배경색 설정 */
+            body {
+                background-color: #FDF9D7;
+            }
+            </style>
+          <div class="canvas-container">
+
+        <div class="canvas">
+            <div class="drawing">
+                <div class="drawzone">
+                    <canvas id="myCanvas"> </canvas>
+
+                </div>
+                <div class="buttonzone">
+                    <button type="button" class="deleteButton">삭제하기</button>
+                    <button type="button" class="saveButton" >저장하기</button>
+        
+                    
+                </div>
+                <div class="colorzone">
+                    <button type="button" id="colorButton1" style="background-color: #FF0000;"></button>
+                    <button type="button" id="colorButton2" style="background-color: #FFA500;"></button>
+                    <button type="button" id="colorButton3" style="background-color: #FFFF00;"></button>
+                    <button type="button" id="colorButton4" style="background-color: #008000;"></button>
+                    <button type="button" id="colorButton5" style="background-color: #0000FF;"></button>
+                    <button type="button" id="colorButton6" style="background-color: #000080;"></button>
+                    <button type="button" id="colorButton7" style="background-color: #800080;"></button>
+                    <button type="button" id="colorButton8" style="background-color: #000000;"></button>
+                    <button type="button" id="colorButton9" style="background-color: #513906;"></button>
+                    <button type="button" id="colorButton10" style="background-color: #73eefe;"></button>
+                    <button type="button" id="colorButton11" style="background-color: #f388e8;"></button>
+                    <button type="button" id="colorButton12" style="background-color: #51061f;"></button>
+                    
+
+                </div>
+            </div>
+            <div class="dogu">
+                <img src="image/icon1.png" class="white-box1" alt="Icon 1">
+                <img src="image/icon2.png" class="white-box2" alt="Icon 2">
+                <img src="image/icon3.png" class="white-box3" alt="Icon 3">
+                <img src="image/icon4.png" class="white-box4" alt="Icon 4">
+                <img src="image/icon5.png" class="white-box5" alt="Icon 5">
+      </div>
+</div>    
+        <!-- 컬러 버튼 그룹 컨테이너 -->
+    <div id="colorButtonGroup">
+        
+   
+<div class="date-picker">
+    <div class="calendar-icon"></div>
+</div>
+    </div>
+    <script src="js/draw.js"></script>
+</body>
+</html>
