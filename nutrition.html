@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/nutrition.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+
+    <!-- 파비콘 설정(브로콜리) -->
+    <link rel="icon" href="image/favicon.png" type="image/png">
+
+    <!-- 부트스트랩 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- 부트스트랩 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>삼시쉽끼</title>
+</head>
+<nav class="navbar navbar-light">
+    <a class="navbar-brand navbar-button" href="index.html">
+        <img src="/image/logodemo1.png" class="custom-image">
+        <span style="font-family: 'Dongle', sans-serif; font-size: 40px; font-weight: bold; margin-left: -7.5px;">삼시쉽끼</span>
+            </a>    
+            <button type="button" class="btn btn-primary" id="button111"
+             onclick="window.location.href = 'draw.html';" style="margin-left: auto;">그림 그리기</button> <!--눌렀을때 draw.html로 이동-->
+             <button type="button" class="btn btn-primary" id="button222">영양 정보</button>
+        </nav>
+        <style>/* 전체 페이지 배경색 설정 */
+            body {
+                background-color: #FDF9D7;
+            }
+            </style>
+
+<div class="square-box">
+    <p id="food-text2">오늘 내 몸 안에 들어있는 음식은?</p>
+  <div class="square-box2">
+        <img src="image/food3.png" class="buger">  
+    </div>
+    
+    <p id="food-text3">햄버거</p>
+<div style="text-align: center; margin-top: -90px;">
+    <button  class="custom-button" onclick="previousFood" style="margin-right: 55px;">이전</button>
+    <button  class="custom-button"onclick="nextFood" style="margin-left: 55px;">다음</button>
+</div>
+</div>
+<div class="circle" style="display: flex; justify-content: center; align-items: center;">
+    <div style="text-align: left; line-height: 0.9; font-family: 'Dongle', sans-serif; font-size: 25px;">
+        칼로리: 200g당 527.67kcal<br>
+        탄수화물: 43.34(22%)<br>
+        단백질: 25/69(13%)<br>
+        지방: 27.95(14%)<br>
+        수분: 99.69g(50%)
+    </div>
+</div>
+<div class="circle2" style="display: flex; justify-content: center; align-items: center;">
+    <div style="text-align: left; line-height: 1.2; font-family: 'Dongle', sans-serif; font-size: 25px;">
+        식이섬유: 과일, 채소, 견과류를 드세요!<br>
+            칼슘: 우유, 요거트, 치즈를 드세요!<br>
+            비타민 D: 생선, 계란 노른자, 버섯을 드세요!<br>
+            철분: 적정량의 콩, 콩나물, 삶은 계란, 씨앗, 견과류를 드세요!
+    </div>
+    
+</div>
+
+<button class="toggle-button" onclick="toggleCircles()">영양 정보</button>
+<script src="js/nutrition.js"></script>
+</body>
+</html>
