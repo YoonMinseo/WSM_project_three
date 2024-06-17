@@ -2,8 +2,8 @@
 
 ## 소개
 
-**삼시쉽끼**는 하루 동안 먹은 음식을 기록하고, 이를 기반으로 그림을 그려서 나에게 부족한 영양정보를 알 수 있는 웹사이트입니다. 
-이 프로젝트를 통해 자신의 식습관을 분석하고 개선할 수 있습니다.
+**삼시쉽끼**는 하루 동안 먹은 음식을 기록하고, 이를 기반으로 그림을 그려서 나에게 부족한 영양정보를
+알 수 있는  반응형 웹사이트입니다. 이 프로젝트를 통해 자신의 식습관을 분석하고 개선할 수 있습니다.
 
 ![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
